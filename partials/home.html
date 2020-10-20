@@ -1,0 +1,38 @@
+<header class="header">
+    <div class="title">
+        <div class="title1">Welcome</div>
+        <h1 class="title2">LeroiPhoto</h1>
+    </div>
+</header>
+<div class="container">
+    <aside class="aside1">
+        <div class="news">
+            <div class="news1">
+              <h2 class="location">situation géographique</h2>
+              <div class="location1">cote d'ivoire</div>
+              <div class="location2">cocody deux plateaux derriere sococe</div>
+            </div>
+            <hr>
+            <div class="news2">
+              <h3 class="contact">contact</h3>
+              <div class="contact1">facebook LeroiPhoto</div>
+              <div class="contact2">gmail anf2013@gmail.com</div>
+              <div class="contact3">whatsApp 0022509710639</div>
+            </div>
+            <hr>
+            <div>LeroiPhoto est ouvert du lundi au samedi de 8h à 19h</div>
+        </div>
+
+    </aside>
+    <main >   
+        <div ng-repeat="homes in home" class="first">
+          <img src="{{homes.image}}" alt="image" class="photo">
+          <div class="photo1">
+            <h4 class="titre">{{homes.title}}</h4>
+            <div class="content">{{homes.content}}</div>
+            <p class="lien"><a href="#!/article/{{homes.id}}">lire la suite</a></p>  
+          </div>    
+        </div> 
+        <footer>leroiPhoto pour une prestation de qualité</footer>
+    </main>
+</div>
